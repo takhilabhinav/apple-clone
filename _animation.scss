@@ -1,0 +1,84 @@
+// animation for opening of mobile menu
+
+@keyframes down {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+// footer links on scroll
+
+@keyframes scroll {
+    0% {
+        transform: translateY(-60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+//mobile fade
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+// mobile button animation
+
+@keyframes reverseTop {
+    0% {
+        transform: rotate(-45deg) translateY(4px) translateX(-2px);
+    }
+    50% {
+        transform: translateY(3px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes reverseBottom {
+    0% {
+        transform: rotate(45deg) translateY(-3px) translateX(-2px);
+    }
+    50% {
+        transform: translateY(-3px)
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes bounceTop {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(3px);
+    }
+    100% {
+        transform: rotate(45deg) translateY(1.5px) translateX(2px);
+    }
+}
+
+@keyframes bounceBottom {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: rotate(-45deg) translateY(-3px) translateX(3.2px);
+    }
+}

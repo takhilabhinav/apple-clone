@@ -1,0 +1,70 @@
+header {
+    height: 6vh;
+    width: 100vw;
+    margin: 0 auto;
+    position: fixed;
+    background-color: $clr-black;
+    backdrop-filter: blur(2rem);
+    opacity: 0.95;
+    z-index: 1000;
+    transition: height 500ms ease;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6vh;
+        padding: 0 1rem;
+        width: 98%;
+        .mobile-ul {
+            display: none;
+            // animation-direction: reverse;
+            li {
+                list-style: none;
+                font-size: .75rem;
+                a{
+                    text-decoration: none;
+                    color: $clr-nav-links;
+                    transition: 350ms ease;
+                    &:hover {
+                        color: $clr-white;
+                        transition: 350ms ease;
+                    }
+                }
+            }
+        }
+        .toggle {
+            cursor: pointer;
+            .line {
+                display: block;
+                width: 16px;
+                height: 1px;
+                background-color: $clr-nav-links;
+                margin: 6px;
+            }
+        }
+    }
+}
+
+
+.nav-icon {
+    color: $clr-nav-links;
+    cursor: pointer;
+    transition: 100ms ease;
+    // margin: 0 1.25rem;
+    &:hover {
+        color: $clr-white;
+    }
+}
+
+.fa-apple {
+    font-size: 1.3rem;
+}
+
+#shopping-bag-icon {
+    height: 1.2rem;
+}
+
+#search-icon,
+#mobile-search-icon {
+    height: 1rem;
+}
